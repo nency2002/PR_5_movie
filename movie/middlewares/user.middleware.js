@@ -1,5 +1,5 @@
 
-const signupcheck = (req , res , next)=>{
+const signup = (req , res , next)=>{
     let {username , email , password} = req.body
 
     if(username && email && password){
@@ -10,7 +10,7 @@ const signupcheck = (req , res , next)=>{
     }
 }
 
-const logincheck = (req , res, next) =>{
+const login = (req , res, next) =>{
     let {username , password} = req.body
 
     if(username && password){
@@ -22,4 +22,4 @@ const logincheck = (req , res, next) =>{
 }
 
 
-module.exports = {signupcheck , logincheck }
+module.exports = {signup , login }

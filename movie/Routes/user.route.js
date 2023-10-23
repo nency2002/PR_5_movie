@@ -3,8 +3,8 @@ const { signup, login, userdelete, createmovie, movieupdate, moviedelete, movier
 const { signupcheck, logincheck } = require("../middlewares/user.middleware");
 const router = Router();
 
-router.post("/user/signup" , signupcheck , signup)
-router.post("/user/login" , logincheck , login)
+router.post("/user/signup" , signup , signup)
+router.post("/user/login" , login , login)
 router.delete("/user/delete/:id" , userdelete)
 
 router.post("/movie/create", createmovie);

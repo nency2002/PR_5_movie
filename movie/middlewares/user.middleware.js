@@ -1,7 +1,6 @@
 
 const signup = (req , res , next)=>{
     let {username , email , password} = req.body
-
     if(username && email && password){
         next()
     }
@@ -12,7 +11,6 @@ const signup = (req , res , next)=>{
 
 const login = (req , res, next) =>{
     let {username , password} = req.body
-
     if(username && password){
         next()
     }
